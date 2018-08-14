@@ -1,6 +1,6 @@
 # never-say-the-last-number
 
-> A interesting gam. lol yes interesting.
+> An interesting game. yes it's interesting. XD
 
 ## Build Setup
 
