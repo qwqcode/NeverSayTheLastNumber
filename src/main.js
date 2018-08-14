@@ -1,5 +1,5 @@
 // Common CSS
-import/dist/vue2-animate.min.css'
+import 'vue2-animate/dist/vue2-animate.min.css'
 import 'material-design-iconic-font/dist/css/material-design-iconic-font.min.css'
 import './css/app.scss'
 
