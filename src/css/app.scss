@@ -1,0 +1,34 @@
+@import "./color";
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  color: rgba(0, 0, 0, 0.6);
+  font-family: "Source Code Pro","Microsoft JhengHei","Helvitica Neue",Helvitica,Arial,"Hiragino Sans GB",sans-serif;
+  line-height: 1.4;
+  background: #FFF;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+@keyframes flash {
+  0%,50%,to {
+    opacity: 1
+  }
+
+  25%,75% {
+    opacity: 0
+  }
+}
+
+.anim-flash {
+  animation: flash 2s infinite both;
+}
