@@ -32,3 +32,9 @@ html, body {
 .anim-flash {
   animation: flash 2s infinite both;
 }
+
+.fade-enter-active, .fadeIn,
+.fade-leave-active, .fadeOut {
+  -webkit-animation-duration: 0.3s !important;
+  animation-duration: 0.3s !important;
+}
