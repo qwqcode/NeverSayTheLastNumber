@@ -3,10 +3,10 @@
 
     <dialog-modal title="新游戏" v-if="!gameStart" @close="$router.push('/')">
       <div class="dialog-block">
-        <dialog-input label="最后一个数：" default-value="21" placeholder="例如：21" hint="谁说到这个数字，谁就输" data-key="lastNum" @recall="setData"></dialog-input>
+        <dialog-input label="最后一个数：" :default-value="lastNum" placeholder="例如：21" hint="谁说到这个数字，谁就输" data-key="lastNum" @recall="setData"></dialog-input>
       </div>
       <div class="dialog-block">
-        <dialog-input label="每次最多说：" default-value="3" placeholder="例如：3" hint="x 个连续的数字" data-key="perMax" @recall="setData"></dialog-input>
+        <dialog-input label="每次最多说：" :default-value="perMax" placeholder="例如：3" hint="x 个连续的数字" data-key="perMax" @recall="setData"></dialog-input>
       </div>
       <transition name="fade">
       <div class="dialog-block" v-if="!!inputError">
@@ -44,10 +44,6 @@
       }
     },
     methods: {
-      setData (dataKey, val) {
-        this[dataKey] = val
-      },
-
       runGame () {
         // 检测输入是否有误
         this.inputError = ''

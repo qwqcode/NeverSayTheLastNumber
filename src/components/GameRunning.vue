@@ -270,7 +270,7 @@ export default {
       pointer-events: none;
 
       & > span {
-        background: #ffc107a6;
+        background: rgba(255, 193, 7, 0.77);
         border: 1px solid #ffc107;
         color: #fff;
         text-shadow: 1px 1px #ffc107;
