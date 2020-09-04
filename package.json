@@ -29,7 +29,7 @@
     "jquery": "^3.3.1",
     "lodash": "^4.17.10",
     "material-design-iconic-font": "^2.2.0",
-    "node-sass": "^4.5.3",
+    "node-sass": "^4.13.1",
     "randomcolor": "^0.5.3",
     "sass-loader": "^6.0.6",
     "vue-loader": "^13.0.5",
